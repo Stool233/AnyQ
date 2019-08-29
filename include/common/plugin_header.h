@@ -24,6 +24,7 @@
 #include "analysis/method_simnet_emb.h"
 // SOLR_Q
 #include "retrieval/term/equal_solr_q_builder.h"
+#include "retrieval/term/equal_or_solr_q_builder.h"
 #include "retrieval/term/boost_solr_q_builder.h"
 #include "retrieval/term/contain_solr_q_builder.h"
 #include "retrieval/term/synonym_solr_q_builder.h"
@@ -66,6 +67,7 @@ REGISTER_PLUGIN(AnalysisSimNetEmb);
 #endif
 // SOLR_Q
 REGISTER_PLUGIN(EqualSolrQBuilder);
+REGISTER_PLUGIN(EqualOrSolrQBuilder);
 REGISTER_PLUGIN(BoostSolrQBuilder);
 REGISTER_PLUGIN(ContainSolrQBuilder);
 REGISTER_PLUGIN(SynonymSolrQBuilder);
